@@ -122,7 +122,7 @@ UserKnownHostsFile=/dev/null
 
 Для вывода данных по запросам браузера предлагается установить в систему для запуска с помощью lighttpd несколько скриптов. 
 
-В папке `/var/www/webapps/` создаём папку **scripts**, в которой далее создаём файлы **cgi-local.sh**, **cgi-snmp.sh**, **cgi-local-html.sh**, **cgi-local-html-table.sh**, **cgi-snmp-html.sh**, **cgi-snmp-html-table.sh**, **cgi-local.rrd**, **cgi-snmp.rrd**, **cgi-weblog.sh** и cgi-cat.sh
+В папке `/var/www/webapps/scirpts/` создаём файлы **cgi-local.sh**, **cgi-snmp.sh**, **cgi-local-html.sh**, **cgi-local-html-table.sh**, **cgi-snmp-html.sh**, **cgi-snmp-html-table.sh**, **cgi-local.rrd**, **cgi-snmp.rrd**, **cgi-weblog.sh** и cgi-cat.sh
 
 Содержимое этих файлов также можно взять из примеров Фетисова: ["я снова ссылка"](http://lab-00.edu.cbias.ru)
 
@@ -173,7 +173,7 @@ UserKnownHostsFile=/dev/null
 
 * нужно подключить модуль ***mod_cgi*** веб-сервера, раскомментировав строку `include "conf.d/cgi.conf"` в файле **modules.conf**;
 
-* задать в подключенном файле конфигурации модуля ***mod_cgi*** (`conf.d/cgi.conf'`) секцию параметров вида:
+* найти задать в подключенном файле конфигурации модуля ***mod_cgi*** (`conf.d/cgi.conf'`) секцию параметров вида:
 
     ```
     cgi.assign      = ( ".pl"  => "/usr/bin/perl",
@@ -182,7 +182,7 @@ UserKnownHostsFile=/dev/null
                         ".sh" => "/bin/bash" )
     ```
 
-* добавить расширения файлов скриптов в параметр `static-file.exclude-extensions` в файле ***lighttpd.conf***:
+* добавить расширения файлов скриптов в параметр `static-file.exclude-extensions` (его необходимо найти в файле) в файле ***lighttpd.conf***:
 
     `static-file.exclude-extensions = ( ".php", ".pl", ".fcgi", ".sh", ".rrd" )`
 
