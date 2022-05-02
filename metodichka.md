@@ -42,12 +42,12 @@
 
 Файл и его подпись в списке:
 
-|       Файл       |                   Подпись                    |
-| --------------------------------------------------------------- |
-|   log-local.sh   | ["Запись лога статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local.sh)|
-|   log-snmp.sh    | ["Запись лога статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp.sh)|
-| log-local-rrd.sh | ["Запись лога статистики локальной системы в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local-rrd.sh)|
-| log-snmp-rrd.sh  | ["Запись лога статистики интерфейса SNMP в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp-rrd.sh)|
+       Файл       |                   Подпись                    
+:----------------:|:------------------------------------------:
+   log-local.sh   | ["Запись лога статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local.sh)
+   log-snmp.sh    | ["Запись лога статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp.sh)
+ log-local-rrd.sh | ["Запись лога статистики локальной системы в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local-rrd.sh)
+ log-snmp-rrd.sh  | ["Запись лога статистики интерфейса SNMP в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp-rrd.sh)
 
 
 В файле log-snmp.sh необходимо немного изменить переменные **N** и **HOST**. Для этого вызываем команду
