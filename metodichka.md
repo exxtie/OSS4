@@ -40,15 +40,14 @@
 
 Файлы с расширением .sh - скрипты. Содержимое этих файлов, кроме **weblog.sh**, берется из примеров Фетисова, находящихся по ссылке ["я ссылка"](http://lab-00.edu.cbias.ru) (можно найти на общей странице лаб по Unix на вкладке **"Пример программ и результаты их работы"**).
 
-Файл и его подпись в списке:
+##### Файл и его подпись в списке:
 
-       Файл       |                   Подпись                    
-:----------------:|:------------------------------------------:
-   log-local.sh   | ["Запись лога статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local.sh)
-   log-snmp.sh    | ["Запись лога статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp.sh)
- log-local-rrd.sh | ["Запись лога статистики локальной системы в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local-rrd.sh)
- log-snmp-rrd.sh  | ["Запись лога статистики интерфейса SNMP в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp-rrd.sh)
-
+|     **Файл**     |                                                            **Подпись**                                                            |
+|:----------------:|:---------------------------------------------------------------------------------------------------------------------------------:|
+|   log-local.sh   |         ["Запись лога статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local.sh)        |
+|    log-snmp.sh   |          ["Запись лога статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp.sh)          |
+| log-local-rrd.sh | ["Запись лога статистики локальной системы в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-local-rrd.sh) |
+|  log-snmp-rrd.sh |   ["Запись лога статистики интерфейса SNMP в базу RRD"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?../../bin/log-snmp-rrd.sh)  |
 
 В файле log-snmp.sh необходимо немного изменить переменные **N** и **HOST**. Для этого вызываем команду
 
@@ -71,6 +70,20 @@
 В папке `/var/www/webapps/` создаём папку **scripts**, в которой далее создаём файлы **cgi-local.sh**, **cgi-snmp.sh**, **cgi-local-html.sh**, **cgi-local-html-table.sh**, **cgi-snmp-html.sh**, **cgi-snmp-html-table.sh**, **cgi-local.rrd**, **cgi-snmp.rrd** и **cgi-weblog.sh**
 
 Содержимое этих файлов также можно взять из примеров Фетисова: ["я снова ссылка"](http://lab-00.edu.cbias.ru)
+
+##### Файл и его подпись в списке
+
+|         **Файл**        |                                                               **Подпись**                                                              |
+|:-----------------------:|:--------------------------------------------------------------------------------------------------------------------------------------:|
+|       cgi-local.sh      |               ["Простой скрипт статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-local.sh)              |
+|    cgi-local-html.sh    |              ["HTML-скрипт статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-local-html.sh)             |
+| cgi-local-html-table.sh | ["HTML-скрипт с выводом таблицей статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-local-html-table.sh) |
+|       cgi-snmp.sh       |                ["Простой скрипт статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-snmp.sh)                |
+|     cgi-snmp-html.sh    |               ["HTML-скрипт статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-snmp-html.sh)               |
+|  cgi-snmp-html-table.sh |   ["HTML-скрипт с выводом таблицей статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-snmp-html-table.sh)  |
+|      cgi-local.rrd      |              ["Выдача графиков статистики локальной системы"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-local.rrd)             |
+|       cgi-snmp.rrd      |               ["Выдача графиков статистики интерфейса SNMP"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-snmp.rrd)               |
+|      cgi-weblog.sh      |          ["Пример скрипта выборки данных из журнала веб-сервера"](http://lab-00.edu.cbias.ru/scripts/cgi-cat.sh?cgi-weblog.sh)         |
 
 Для запуска скриптов как веб-программ следует разрешить это в настройках ***lighttpd*** (расположенных в каталоге `/etc/lighttpd/`):
 
