@@ -408,3 +408,8 @@ UserKnownHostsFile=/dev/null
 
 `sudo -u <pseudouser_name> crontab -l`
 
+---
+
+## Проверка работы
+
+Посмотреть результаты работы можно на странице `http://lab-NN.edu.cbias.ru`, где **NN** - номер вашего варианта.
